@@ -1,0 +1,45 @@
+main{
+    display: grid;
+    grid-template-columns:7% 60% 30%;
+    grid-template-rows:300px 300px 300px;
+    grid-template-areas:"area1 area1 area3"
+                        "area5 area2 area3"
+                        "area8 area2 area3";
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+#mainpsy{
+    grid-area: area1;
+}
+#mainpsydos{
+    grid-area3;
+}
+#mainpsytres{
+    grid-area: area2;
+    font-size: 25px;
+}
+
+@media only screen and (max-width:768px){
+    body{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 180px 2500px 170px;
+        grid-template-areas:"header"
+                            "nav"
+                            "main"
+                            "footer";
+        
+    }
+    main{
+        display: grid;
+        grid-template-columns:7% 60% 30%;
+        grid-template-rows:30% 35% 30%;
+        grid-template-areas:"area1 area1 area3"
+                            "area5 area2 area3"
+                            "area8 area2 area3";
+        justify-content: space-around;
+        align-content: space-around;
+        
+    }
+}

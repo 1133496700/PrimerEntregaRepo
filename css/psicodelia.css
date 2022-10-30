@@ -1,0 +1,67 @@
+main{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:"psi1 psi1 psi2 psi2"
+                        "psi1 psi1 psi3 psi3"
+                        "psi5 psi4 psi4 psi4"
+                        "psi6 psi4 psi4 psi4"
+                        "psi21 psi22 psi23 psi24"
+                        "psi26 psi27 psi28 psi29"
+                        "psi31 psi32 psi33 psi34"
+                        "psi36 psi37 psi38 psi39";
+    justify-content:space-around;
+    align-content:space-around;
+    align-items: center;
+    justify-items: center;
+}
+section img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bodypsicodelia{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 70px 2900px 170px;
+    grid-template-areas:"header"
+                        "nav"
+                        "main"
+                        "footer";
+}
+#section1{
+    grid-area: psi1;
+    display: flex;
+    flex-direction: column;
+}
+#section1 h1{
+    position: relative;
+    left:190px;
+}
+#section2{
+    grid-area: psi2;
+}
+#section3{
+    grid-area: psi3;
+}
+#section4{
+    grid-area: psi4;
+}
+#section4 h2{
+    position: relative;
+    left:270px;
+}
+#section5{
+    grid-area: psi5;
+    display: flex;
+    flex-direction: column;
+}
+#section5 p{
+    position: relative;
+    left:100px;
+}
+#section6{
+    grid-area: psi6;
+    display: flex;
+}

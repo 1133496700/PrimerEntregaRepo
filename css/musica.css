@@ -1,0 +1,80 @@
+main{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows: 40% 40% 18%;
+    grid-template-areas:"area1 area1 area3"
+                        "area4 area5 area5"
+                        "area7 area8 area9";
+
+    justify-content:space-around;
+    align-content:space-around;
+
+}
+#music1{
+    grid-area: area1;
+    display:grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 22% 25% 25% 25%;
+    grid-template-areas:"astrix1 astrix1"
+                        "astrix4 astrix5"
+                        "astrix7 astrix8"
+                        "astrix10 astrix8";
+    justify-content: space-around;
+    align-content: space-around;
+
+    
+}
+#music2{
+    grid-area:astrix1;
+    
+}
+#music3{
+    grid-area:astrix8;
+}
+#music4{
+    grid-area: astrix10;
+}
+#music5{
+    grid-area: astrix5;
+}
+#music6{
+    grid-area: astrix7;
+}
+#musicA{
+    grid-area: area5;
+    display:grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 22% 25% 25% 25%;
+    grid-template-areas:"astri1 astri1"
+                        "astri2 astri3"
+                        "astri4 astri3"
+                        "astri5 astri6";
+    justify-content: space-around;
+    align-content: space-around;
+
+    
+}
+#musicB{
+    grid-area:astri1;
+    
+}
+#musicC{
+    grid-area:astri2;
+}
+#musicD{
+    grid-area: astri4;
+}
+#musicE{
+    grid-area: astri5;
+}
+#musicF{
+    grid-area: astri3;
+}
+
+#soundA{
+    grid-area:area7;
+}
+#soundB{
+    grid-area:area9;
+}
+

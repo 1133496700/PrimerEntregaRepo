@@ -1,0 +1,39 @@
+main{
+    display: grid;
+    grid-template-columns: 14% 70% 14%;
+    grid-template-rows: 450px 450px 450px;
+    grid-template-areas:"section1 section1 a3"
+                        "a4 section2 a6"
+                        "a7 section3 a9";
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+}
+#section1{
+    padding: 20px;
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 700;
+}
+#a3{
+    padding: 20px;
+    grid-area: a3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#a4{
+    padding: 20px;
+    grid-area: a4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#section2{
+    grid-area: section2;
+
+}
